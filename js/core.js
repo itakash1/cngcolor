@@ -25,7 +25,7 @@ const idk = nextColorBtn.onclick = function(){
 
 
 previousColorBtn.onclick = function(){
-  const savedColor = sessionStorage.getItem(counter - 1)
+  const savedColor = sessionStorage.getItem(counter--)
 
   document.body.style.backgroundColor = savedColor;
   document.getElementById('colorCodeText').textContent = savedColor;
