@@ -11,25 +11,29 @@
 
   <body>
     <div class="page">
-      <div class="block-output">
-        <div class="alert-copy" id="alertCopy"><p id="typeError">copied</p></div>
+      <div class="container">
+        <div class="row">
+          <div class="block-output">
+            <div class="alert-copy" id="alertCopy"><p id="typeError">copied</p></div>
+            
+            <div title="Click To Copy" class="output" id="clickToCopy">
+              <button><p>Color <span id="colorCodeText">#000000</p></span></button>
+            </div>
+          </div>
+    
+          <div class="block-button">
+            <div class="button-back">
+              <button title="Previous Color" id="previousColorBtn"><img src="source/back.png" alt="Previous Color"></button>
+            </div>
         
-        <div title="Click To Copy" class="output" id="clickToCopy">
-          <button><p>Color <span id="colorCodeText">#000000</p></span></button>
-        </div>
-      </div>
-
-      <div class="block-button">
-        <div class="button-back">
-          <button title="Previous Color" id="previousColorBtn"><img src="source/back.png" alt="Previous Color"></button>
-        </div>
-    
-        <div class="button-change-color">
-          <button title="Change Color" type="button" id="nextColorBtn">Putt on me!</button>
-        </div>
-    
-        <div class="button-link">
-          <a href="https://github.com/itakash1"><button title="GitHub/itakash1"><img  src="source/github-mark-white.png" alt="GitHub"></button></a>
+            <div class="button-change-color">
+              <button title="Change Color" type="button" id="nextColorBtn">Putt on me!</button>
+            </div>
+        
+            <div class="button-link">
+              <a href="https://github.com/itakash1"><button title="GitHub/itakash1"><img  src="source/github-mark-white.png" alt="GitHub"></button></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
