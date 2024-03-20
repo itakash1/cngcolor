@@ -42,17 +42,25 @@ const copy = outputCopy.onclick = function(){
     navigator.clipboard.writeText('#000000');
     newAlert.style.opacity = 1;
     setTimeout(() => {
-      newAlert.style.opacity = 0;
-    }, 1000);
-  }
-  else{
+      const interval = setInterval(() => {
+        newAlert.style.opacity = parseFloat(newAlert.style.opacity) - 0.1;
+
+        if(newAlert.style.opacity <= 0){
+          clearInterval(interval);
+        }
+      }, 25)
+    }, 900)
+  } else{
     navigator.clipboard.writeText(color);
     newAlert.style.opacity = 1;
     setTimeout(() => {
-      newAlert.style.opacity = 0;
-    }, 1000);
+      const interval = setInterval(() => {
+        newAlert.style.opacity = parseFloat(newAlert.style.opacity) - 0.1;
+
+        if(newAlert.style.opacity <= 0){
+          clearInterval(interval);
+        }
+      }, 25)
+    }, 900)
   }
 }
-
-
-
