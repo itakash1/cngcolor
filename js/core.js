@@ -65,4 +65,4 @@ const copy = outputCopy.onclick = function(){
   }
 }
 
-window.ondoubleclick = (e) => e.preventDefault()
+window.ondblclick = (e) => e.preventDefault()
