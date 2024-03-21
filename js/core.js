@@ -65,10 +65,4 @@ const copy = outputCopy.onclick = function(){
   }
 }
 
-document.addEventListener('touchmove', function(event) {
-  event = event.originalEvent || event;
-
-  if(event.scale > 1) {
-      event.preventDefault();
-  }
-}, false);
+window.ondoubleclick = (e) => e.preventDefault()
